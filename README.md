@@ -1,9 +1,9 @@
 # 🚀 45telega - Production-Ready Telegram MCP Server
 
-[![Docker](https://img.shields.io/docker/v/yourusername/45telega)](https://hub.docker.com/r/yourusername/45telega)
+[![Release](https://img.shields.io/github/v/release/sergekostenchuk/45telega?include_prereleases)](https://github.com/sergekostenchuk/45telega/releases)
 [![PyPI](https://img.shields.io/pypi/v/45telega)](https://pypi.org/project/45telega/)
-[![License](https://img.shields.io/github/license/yourusername/45telega)](LICENSE)
-[![Tests](https://img.shields.io/github/actions/workflow/status/yourusername/45telega/release.yml)](https://github.com/yourusername/45telega/actions)
+[![License](https://img.shields.io/github/license/sergekostenchuk/45telega)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](setup.py)
 
 A powerful Model Context Protocol (MCP) server for Telegram with 45+ methods, production-ready deployment, and enterprise features.
 
@@ -47,7 +47,7 @@ docker run -d \
   -e TELEGRAM_API_ID=your_api_id \
   -e TELEGRAM_API_HASH=your_api_hash \
   -v $(pwd)/data:/data \
-  ghcr.io/yourusername/45telega:latest
+  ghcr.io/sergekostenchuk/45telega:latest
 ```
 
 ## 📋 Prerequisites
@@ -155,7 +155,7 @@ See the [Windows Setup Guide](WINDOWS_WSL_SETUP.md) for detailed Kiro IDE integr
 - `BlockUser` - Block user
 - `UnblockUser` - Unblock user
 
-[Full API Documentation →](https://github.com/yourusername/45telega/wiki/API)
+[Full API Documentation →](https://github.com/sergekostenchuk/45telega/wiki/API)
 
 ## 🐳 Docker Deployment
 
@@ -165,7 +165,7 @@ See the [Windows Setup Guide](WINDOWS_WSL_SETUP.md) for detailed Kiro IDE integr
 version: '3.8'
 services:
   45telega:
-    image: ghcr.io/yourusername/45telega:latest
+    image: ghcr.io/sergekostenchuk/45telega:latest
     restart: unless-stopped
     ports:
       - "8765:8765"
@@ -274,7 +274,6 @@ MIT License - see [LICENSE](LICENSE) file.
 
 - **Issues**: [GitHub Issues](https://github.com/sergekostenchuk/45telega/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/sergekostenchuk/45telega/discussions)
-- **Email**: 9616166@gmail.com
 
 ## 🙏 Acknowledgments
 

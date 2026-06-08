@@ -1,6 +1,6 @@
 #!/bin/bash
 # 45telega MCP Server - One-line Installation Script
-# Usage: curl -sSL https://raw.githubusercontent.com/yourusername/45telega/main/install.sh | bash
+# Usage: curl -sSL https://raw.githubusercontent.com/sergekostenchuk/45telega/main/install.sh | bash
 
 set -e
 
@@ -12,7 +12,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-REPO_URL="https://github.com/yourusername/45telega"
+REPO_URL="https://github.com/sergekostenchuk/45telega"
 INSTALL_DIR="$HOME/.local/share/45telega"
 BIN_DIR="$HOME/.local/bin"
 CONFIG_DIR="$HOME/.config/45telega"
@@ -104,7 +104,7 @@ download_and_install() {
         fi
     else
         # Download release archive
-        LATEST_RELEASE=$(curl -s https://api.github.com/repos/yourusername/45telega/releases/latest | grep "tarball_url" | cut -d '"' -f 4)
+        LATEST_RELEASE=$(curl -s https://api.github.com/repos/sergekostenchuk/45telega/releases/latest | grep "tarball_url" | cut -d '"' -f 4)
         curl -L "$LATEST_RELEASE" | tar xz -C "$INSTALL_DIR" --strip-components=1
     fi
     print_success "Downloaded successfully"
